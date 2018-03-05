@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>정수 찾기</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	var n,x,y,z,number;
+	number=0;
+	for(n = 1 ; n <= 10 ; n++){
+		for(x=1;x<=20;x++){
+			for(y=1;y<=20;y++){
+				for(z=1;z<=20;z++){
+					if(Math.pow(x,n) + Math.pow(y,n) == Math.pow(z,n)){
+					number++;}
+				}
+			}
+		}
+		document.write("n이" +n+ "일 때 주어진 식을 만족시키는" +number+"개의 벡터가 있습니다.<br>");
+		number=0;
+		}
+	</script>
+	</body>
+</html>

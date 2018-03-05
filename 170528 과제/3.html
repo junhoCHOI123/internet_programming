@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>Javascript4#1</title>
+
+    </head>
+
+    <body>
+
+		<script type="text/javascript">
+        var input=prompt("정수를 입력해주세요","정수");
+        var i=2;
+        var b;
+        var c = true;
+        while(i<input)
+        {
+        b=input%i;
+            if (b==0)
+            {
+                c = false;
+                break;
+            }
+        i++;
+        }
+
+        if (c=="false")
+        {
+            document.write(input "은 소수입니다.<br>");
+        }
+
+        else
+        {
+            document.write(input"은 소수가 아닙니다.<br>");
+        }
+
+		</script>
+
+    </body>
+
+</html>
